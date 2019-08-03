@@ -1,5 +1,25 @@
 
-ul{
+.addTaskHeader{
+    margin-bottom: 0px;
+    background-color: white !important;
+}
+.addTaskHeaderButton{
+    color: #98C8BF !important;
+    text-decoration: none !important;
+    margin-left: 10px;
+}
+.addBodyCard{
+    
+    border-bottom-color: rgba(0, 0, 0, 0.125);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.paddingHeaderCard{
+    padding: 0px 0px 5px 0px !important;
+}
+
+/* ul{
     display: flex;
 }
 
@@ -15,4 +35,4 @@ li{
 
 .agregar{
     width: 50%;
-}
+} */
