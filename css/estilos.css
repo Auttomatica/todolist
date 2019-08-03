@@ -1,0 +1,18 @@
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin-left: 20px;
+}
+.prioridad{
+    width: 50%;
+    margin-top: 30px;
+  
+}
+
+.agregar{
+    width: 50%;
+}
