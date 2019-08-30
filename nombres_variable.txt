@@ -1,0 +1,6 @@
+textarea = txtTask
+button   = btnAddTask
+
+-----
+
+list     = taskList
