@@ -19,6 +19,15 @@
     padding: 0px 0px 5px 0px !important;
 }
 
+.borrar-tarea{
+    
+    float: right;
+    cursor: pointer;
+    color: red !important;
+    font-weight: bold;
+    
+}
+
 /* ul{
     display: flex;
 }
