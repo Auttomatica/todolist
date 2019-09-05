@@ -28,6 +28,17 @@
     
 }
 
+.ocultar{
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}
+
+.enlinea{
+    display: inline-block !important;
+}
 
 
 

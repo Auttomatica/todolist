@@ -4,3 +4,20 @@ button   = btnAddTask
 -----
 
 list     = taskList
+
+Cosas pendientes:
+
+04/09
+
+# Que se borre "ninguna" cuando se agregan tareas. (falta mostrar "ninguna" cuando no hay mas tareas)
+# Que las tareas se agreguen dentro de un div.
+- Que se borren todas las tareas con el botón borrar todo.
+# Vaciar el textarea  
+# No dejar que se agreguen tareas vacias  
+
+06/09
+# En lugar de alerts agregar un modal de bootstrap o sweetalert.
+# Mejorar estilos.
+# Guardar en base.
+# Hacer servicios.
+# 
