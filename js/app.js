@@ -10,7 +10,7 @@ function eventListeners(){
     
     taskList.addEventListener('click', fDeleteTask);
 
-    
+    borrarTodo.addEventListener('click', fBorrarTodo);
 }
 
 
@@ -32,12 +32,14 @@ function fAddTaskList(e){
     btnBorrar.innerText = "X";
     
     const div = document.createElement("div");
+
+    div.setAttribute("id", '1');
     div.classList = 'card mt-4 mb-0 p-2 pl-4 enlinea';
     div.innerText = sinEspacio;
     div.appendChild(btnBorrar);
     taskList.appendChild(div);
 
-    const ninguna = document.getElementById('ningunaTarea');
+    let ninguna = document.getElementById('ningunaTarea');
 
     ninguna.classList = "ocultar";
 
@@ -52,8 +54,27 @@ function fDeleteTask(e){
     if(e.target.className === "borrar-tarea"){
         e.target.parentElement.remove();
 
+        
     }
 
+
+
+}
+ 
+function fBorrarTodo(){
+
+    var children = document.querySelectorAll('#taskList div');
+
+    console.log(children);
+
+    children.forEach(function(child){
+
+        child.parentNode.removeChild(child);
+
+    });
+
+    let ninguna = document.getElementById('ningunaTarea');
+    ninguna.classList = "text-center mt-4 mostrar";
 
 
 }

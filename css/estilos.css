@@ -33,12 +33,15 @@
 }
 
 .mostrar{
+
     display: block;
+    
 }
 
 .enlinea{
     display: inline-block !important;
 }
+
 
 
 
