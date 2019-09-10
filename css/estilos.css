@@ -42,9 +42,25 @@
     display: inline-block !important;
 }
 
+.campoRequerido{
 
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
 
+.prioridadAlta{
+    background-color: #f75b5b !important;    
+}
 
+.prioridadMedia{
+    background-color: #f2e232 !important;    
+}
+
+.prioridadBaja{
+    background-color: #2aea77 !important;    
+}
 
 /* ul{
     display: flex;
