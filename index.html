@@ -57,7 +57,7 @@
                   <div class="container">
                     <div class="form-group row">
 
-                      <div class="col-12 col-md-8">
+                      <div class="col-12 col-md-6">
 
                         <label for="txtTask">Agregar tarea:</label>
                         <textarea class="form-control" id="txtTask" rows="3"></textarea>
@@ -65,11 +65,11 @@
                         
                       </div>
                       
-                      <div class="col-12 col-md-4">
+                      <div class="col-12 col-md-6">
                       
                         <div class="row">
 
-                          <div class="col-6">
+                          <div class="col-5">
 
                             <label for="exampleFormControlTextarea1">Prioridad:</label>
                             <select id="prioridad" class="form-control form-control-sm">
@@ -80,16 +80,16 @@
                             
                           </div>
 
-                          <div class="col-6">
+                          <div class="col-7">
 
                               <label for="exampleFormControlTextarea1">Dia:</label>
-                              <input type="date" class="pr-0">
-                              
+                              <input class="form-control" type="datetime-local" value="14-02-2004 02:04" id="horaYfecha">
+                              <p id="obligatorioTambien"  class="campoRequerido ocultar"> Este campo es obligatorio </p>
                           </div>
                         </div>
                         <div class="botones">
 
-                          <button type="button" id="btnAddTask" class="btn btn-info btn-lg btn-block mt-4">
+                          <button type="button" id="btnAddTask" class="btn btn-info  btn-block mt-3">
                             <i class="fas fa-plus-circle"></i>
                             Agregar
                           </button>
@@ -111,6 +111,7 @@
         <div class="container">
           
           <h4 class="text-center mt-4">Mis tareas pendientes</h4>
+          <hr>
           
           <div id="taskList" class="mt-4 mb-4 pt-0 pr-4 pl-4 pb-4 card">
 

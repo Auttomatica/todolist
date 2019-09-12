@@ -20,12 +20,12 @@ Cosas pendientes:
 - Mejorar estilos.
 - Guardar en base.
 - Hacer servicios.
+
+12/09
+
+         FECHA
+- darle funcionalidad
+- agregarla a la tarea 
+- agruparlas 
+- darle estilo  
 - 
-
-
-
-
-1° Ubicar un parrafo <p></p> abajo del textarea. (color rojo).
-2° El primer estado es oculto.
-3° Despues de un evento hacerla aparecer.
-4° Ver como hacer para que exista un evento que se quede escuchando el textarea.

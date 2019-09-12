@@ -51,15 +51,20 @@
 }
 
 .prioridadAlta{
-    background-color: #f75b5b !important;    
+    
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
 }
 
 .prioridadMedia{
-    background-color: #f2e232 !important;    
+    background-color: #fff3cd !important;
+    border-color: #ffeeba !important;
+    
 }
 
 .prioridadBaja{
-    background-color: #2aea77 !important;    
+    background-color: #d1ecf1 !important;
+    border-color: #bee5eb !important;
 }
 
 /* ul{

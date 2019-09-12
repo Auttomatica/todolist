@@ -38,13 +38,40 @@ function fAddTaskList(e){
         obligatorio.classList.add('ocultar');
 
     }
+    const horaYfecha = document.getElementById('horaYfecha').value;
+    
+    if(horaYfecha == '' && obligatorioTambien.classList.contains('ocultar')){
+
+        obligatorioTambien.classList.remove('ocultar');
+        obligatorioTambien.classList.add('mostrar');
+        
+        return;
+    }
+
+    if(horaYfecha == '' && obligatorioTambien.classList.contains('mostrar')){
+        return;
+    }
+
+
+    if(horaYfecha != '' && obligatorioTambien.classList.contains('mostrar')){
+
+        obligatorioTambien.classList.remove('mostrar');
+        obligatorioTambien.classList.add('ocultar');
+
+    }
+
 
     let sinEspacio = tarea.trim();
 
+
+   
     const btnBorrar = document.createElement('a');
-    
+
+    const iconoBorrar = document.createElement('i');
+    iconoBorrar.classList = 'fas fa-times';
     btnBorrar.classList = "borrar-tarea";
-    btnBorrar.innerText = "X";
+
+    btnBorrar.appendChild(iconoBorrar);
     
     const div = document.createElement("div");
 
@@ -70,7 +97,8 @@ function fAddTaskList(e){
     ninguna.classList = "ocultar";
 
     document.getElementById('txtTask').value = '';
-
+    document.getElementById('horaYfecha').value = '';
+    
 }
 
 
@@ -78,8 +106,10 @@ function fDeleteTask(e){
     
     let children = document.querySelectorAll('#taskList div');
     
-    if(e.target.className === "borrar-tarea"){
-        e.target.parentElement.remove();
+    if(e.target.parentElement.className === "borrar-tarea"){
+
+
+        e.target.parentElement.parentElement.remove();
         
         if(children.length === 1){
             
